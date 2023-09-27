@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event</title>
+    <script type="text/javascript">
+       function myFun(){
+        alert();
+       }
+       function mouseOverfunction(){
+        document.body.style.background="yellow"
+       }
+       function mouseOutfunction(){
+        document.body.style.background="pink"
+       }
+       function mouseMovefunction(){
+        document.body.style.background="orange"
+       }
+       function mouseUpfunction(){
+        document.body.style.background="cyan"
+       }
+       function mouseDownfunction(){
+        document.body.style.background="grey"
+       }
+    </script>
+</head>
+<body>
+    <form action="" method="">
+<label onmousedown="mouseDownfunction()">First Name  </label><input type="text" name="firstName"><br><br>
+<label onmousemove="mouseMovefunction()">Last Name   </label><input type="text" name="lastName"><br><br>
+<label onmouseover="mouseOverfunction()" onmouseout="mouseOutfunction()">Nick Name   </label><input type="text" name="nickName"><br><br>
+<!-- <button onclick="myFun()">Click Me!</button> -->
+<!-- <button ondblclick="myFun()">Click Me!</button> -->
+<!-- <button onmouseover="mouseOverfunction()">Click Me!</button> -->
+<button onmouseup="mouseUpfunction()">Click Me!</button>
+
+    </form>
+
+
+
+</body>
+</html>
